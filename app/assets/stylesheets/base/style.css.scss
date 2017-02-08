@@ -1374,7 +1374,7 @@ a:hover .lnk-icon-right {
 }
 
 .fIU0 {
-  background-image: url("full_4.jpg");
+  background-image: url(image-path("full_4.jpg"));
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1384,7 +1384,7 @@ a:hover .lnk-icon-right {
 }
 
 .fIU1 {
-  background-image: url("full_2.jpg");
+  background-image: url(image-path("full_2.jpg"));
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1394,7 +1394,7 @@ a:hover .lnk-icon-right {
 }
 
 .fIU2 {
-  background-image: url("full_1.jpg");
+  background-image: url(image-path("full_1.jpg"));
     background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
