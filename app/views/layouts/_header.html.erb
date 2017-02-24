@@ -1,0 +1,50 @@
+<!--     <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
+      <div class="container">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 fh5co-logo">
+          <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
+          <%= link_to 'SteveEGordon.com', root_path , class: "nav-title" %>
+        </div>
+        <div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap">
+          <ul data-offcanvass="yes">
+            <li class="active"><%= link_to 'home', root_path %></li>
+          <li><%= link_to 'blog', posts_path %></li>
+          <li><%= link_to 'about me', about_me_path %></li>
+          <li><%= link_to 'projects', projects_path %></li>
+          </ul>
+        </div> 
+
+
+      </div>
+    </nav> -->
+
+ <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to 'SteveEGordon.com', root_path , class: "navbar-brand" %>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="<%= 'active' if action_name == 'home' %>"><%= link_to 'home', root_path %></li>
+            <li class="<%= 'active' if action_name == 'index' %>"><%= link_to 'blog', posts_path %></li>
+            <li class="<%= 'active' if action_name == 'about_me' %>"><%= link_to 'about me', about_me_path %></li>
+            <li class="<%= 'active' if action_name == 'projects' %>"><%= link_to 'projects', projects_path %></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+<!--                 <div class="col-lg-3 col-md-4 col-sm-4 text-right fh5co-link-wrap">
+          <ul class="fh5co-special" data-offcanvass="yes">
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="call-to-action">Get Started</a></li>
+          </ul> -->
+

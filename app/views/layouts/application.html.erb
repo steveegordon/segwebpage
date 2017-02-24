@@ -37,6 +37,7 @@
   <meta name="twitter:image" content="" />
   <meta name="twitter:url" content="http://www.SteveEGordon.com/" />
   <meta name="twitter:card" content="" />
+  <title><%= full_title(yield (:title)) %></title>
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   
@@ -57,35 +58,13 @@
 </head>
 <body>
 <div id="fh5co-page">
-    <nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
-      <div class="container">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 fh5co-logo">
-          <a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
-          <%= link_to 'SteveEGordon.com', home_path , class: "nav-title" %>
-        </div>
-        <div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap">
-          <ul data-offcanvass="yes">
-            <li class="active"><%= link_to 'home', home_path %></li>
-          <li><%= link_to 'blog', posts_path %></li>
-          <li><%= link_to 'about me', about_me_path %></li>
-          <li><%= link_to 'projects', projects_path %></li>
-          </ul>
-        </div> 
-        <div class="col-lg-3 col-md-4 col-sm-4 text-right fh5co-link-wrap">
-          <ul class="fh5co-special" data-offcanvass="yes">
-<!--             <li><a href="#">Login</a></li>
-            <li><a href="#" class="call-to-action">Get Started</a></li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <div class="fh5co-cover fh5co-cover-style-2 js-full-height" data-stellar-background-ratio="0.5" data-next="yes"
         <span class="scroll-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
         <a href="#">
           <span class="mouse"><span></span></span>
         </a>
       </span>
+       <%= render 'layouts/header' %>
       <div class="fh5co-overlay"></div>
       <div class="fh5co-cover-text">
         <div class="container">

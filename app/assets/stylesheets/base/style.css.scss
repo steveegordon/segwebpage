@@ -406,6 +406,17 @@ a:hover .lnk-icon-right {
 2.0 NAVIGATIONS 
 ///////////////////////////////////////////////////
 */
+.navbar {
+  z-index: 500;
+  border: none;
+  background-color: rgba(0,0,0,.1);
+}
+li.active > a  {
+  background-color: rgba(0,0,0,.2) !important;
+}
+a.navbar-brand {
+  color: white !important;
+}
 #fh5co-offcanvass {
   position: fixed;
   width: 250px;
@@ -3400,108 +3411,5 @@ a:hover .lnk-icon-right {
   background-position: bottom !important;
 }
 
-/*
-///////////////////////////////////////////////////
-12.0 MISCELLANEOUS
-///////////////////////////////////////////////////
-*/
-/* Burger Menu */
-.fh5co-nav-toggle {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  text-decoration: none;
-}
-.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: rgba(255, 255, 255, 0.5);
-}
-.fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
-  outline: none;
-  border-bottom: none !important;
-}
-.fh5co-nav-toggle i {
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  width: 25px;
-  height: 2px;
-  color: #1784fb;
-  font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
-  text-indent: -55px;
-  background: rgba(255, 255, 255, 0.5);
-  transition: all .2s ease-out;
-}
-.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
-  content: '';
-  width: 25px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.fh5co-nav-toggle i::before {
-  top: -7px;
-}
-
-.fh5co-nav-toggle i::after {
-  bottom: -7px;
-}
-
-.fh5co-nav-toggle:hover i::before {
-  top: -10px;
-}
-
-.fh5co-nav-toggle:hover i::after {
-  bottom: -10px;
-}
-
-.fh5co-nav-toggle.active i {
-  background: transparent;
-}
-
-.fh5co-nav-toggle.active i::before {
-  top: 0;
-  -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
-  -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-}
-
-.fh5co-nav-toggle.active i::after {
-  bottom: 0;
-  -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
-  -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-}
-
-.fh5co-nav-toggle {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 21;
-  padding: 6px 0 0 0;
-  display: block;
-  margin: 0 auto;
-  margin-top: 12px;
-  display: none;
-  height: 44px;
-  width: 44px;
-  border-bottom: none !important;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-nav-toggle {
-    display: block;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
