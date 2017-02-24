@@ -9,7 +9,9 @@ module ApplicationHelper
     end
   end
   def cover(page_title = "")
+    unless page_title.empty?
     page_title.downcase!.gsub!(" ", "_")
     page_title
+  end
   end
 end
