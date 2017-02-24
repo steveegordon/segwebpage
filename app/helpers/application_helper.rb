@@ -8,6 +8,8 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
-  def cover(page_title)
+  def cover(page_title = "")
+    page_title.downcase!.gsub!(" ", "_")
+    page_title
   end
 end

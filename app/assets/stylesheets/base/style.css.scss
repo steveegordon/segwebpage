@@ -887,6 +887,9 @@ a.navbar-brand {
 3.0 COVERS 
 ///////////////////////////////////////////////////
 */
+html > body > div > div.about_me {
+background-image: url(image-path("about_me.jpg"));
+}
 .fh5co-cover {
   position: relative;
   min-height: 800px;
