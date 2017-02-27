@@ -890,6 +890,12 @@ a.navbar-brand {
 html > body > div > div.about_me {
 background-image: url(image-path("about_me.jpg"));
 }
+html > body > div > div.blog {
+  background-image: url(image-path("shiningLG.jpg"));
+}
+html > body > div > div.projects {
+  background-image: url(image-path("lightbulb.jpg"));
+}
 .fh5co-cover {
   position: relative;
   min-height: 800px;
