@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require turbolinks
+//= require jquery.turbolinks
+//= require jquery_ujs
 //= require tether
 //= require bootstrap
-//= require jquery_ujs
-//= require turbolinks
 //= require jquery.countTo
 //= require jquery.easing.1.3
 //= require jquery.magnific-popup.min
