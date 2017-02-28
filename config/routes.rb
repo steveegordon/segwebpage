@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   get 'pages/home', :path => "home", :as => "home"
   get 'pages/projects', :path => "projects", :as => "projects"
   get 'pages/about_me', :path => "about_me", :as => "about_me"
-
-  resources :posts
+  get 'posts' => "posts#recent", :as => "recent_blog"
+  get 'posts/all' => "posts#index", :as => "blog"
+  # get 'posts' => 'posts#recent'
+  # resources :posts
+  # get 'posts/index', :path => "posts#index"
 
   root'pages#home'
 

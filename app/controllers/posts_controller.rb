@@ -4,9 +4,12 @@ class PostsController < ApplicationController
   end
   def index
     @posts = Post.all
-    @recent = @posts.last(3)
   end
   def new
+  end
+  def recent
+    @posts = Post.all
+    @recent = @posts.last(3)
   end
   def create
     @post = Post.new(post_params)
