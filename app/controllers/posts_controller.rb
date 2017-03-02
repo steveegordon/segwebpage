@@ -7,10 +7,6 @@ class PostsController < ApplicationController
   end
   def new
   end
-  def recent
-    @posts = Post.all
-    @recent = @posts.last(3)
-  end
   def create
     @post = Post.new(post_params)
     @post.user_id = 1
@@ -23,6 +19,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:image, :title, :text)
+      params.require(:post).permit(:category, :image, :title, :text)
     end
 end

@@ -1,3 +1,8 @@
+<div class="fullpost">
+  <div class="post-img">
+  <%= image_tag(@post.image.url, :class => "img-responsive") %>
+  </div>
+  <div class="post-content">
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
@@ -7,3 +12,5 @@
   <strong>Text:</strong>
   <%= @post.text %>
 </p>
+</div>
+</div>

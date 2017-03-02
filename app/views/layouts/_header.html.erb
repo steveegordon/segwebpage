@@ -7,7 +7,7 @@
         <div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap">
           <ul data-offcanvass="yes">
             <li class="active"><%= link_to 'home', root_path %></li>
-          <li><%= link_to 'blog', recent_blog_path %></li>
+          <li><%= link_to 'blog', blog_path %></li>
           <li><%= link_to 'about me', about_me_path %></li>
           <li><%= link_to 'projects', projects_path %></li>
           </ul>
@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="<%= 'active' if action_name == 'home' %>"><%= link_to 'home', root_path %></li>
-            <li class="<%= 'active' if action_name == 'index' %>"><%= link_to 'blog', recent_blog_path %></li>
+            <li class="<%= 'active' if action_name == 'index' %>"><%= link_to 'blog', blog_path %></li>
             <li class="<%= 'active' if action_name == 'about_me' %>"><%= link_to 'about me', about_me_path %></li>
             <li class="<%= 'active' if action_name == 'projects' %>"><%= link_to 'projects', projects_path %></li>
           </ul>

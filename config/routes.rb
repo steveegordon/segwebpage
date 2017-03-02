@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'pages/home', :path => "home", :as => "home"
+  get 'pages/home' => "posts#recent", :path => "home", :as => "home"
   get 'pages/projects', :path => "projects", :as => "projects"
   get 'pages/about_me', :path => "about_me", :as => "about_me"
-  get 'posts' => "posts#recent", :as => "recent_blog"
-  get 'posts/all' => "posts#index", :as => "blog"
+  get 'posts' => "posts#index", :as => "blog"
+  get 'posts/new' => "posts#new"
+  get 'posts/:id' => "posts#show", :as => 'post'
+  post 'posts/new' => "posts#create", :as => "posts"
   # get 'posts' => 'posts#recent'
   # resources :posts
   # get 'posts/index', :path => "posts#index"
