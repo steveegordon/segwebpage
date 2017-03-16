@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
+    @position = @post.image.url.rindex('/') + 1
   end
   def index
     @posts = Post.all

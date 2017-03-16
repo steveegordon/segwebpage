@@ -888,13 +888,21 @@ a.navbar-brand {
 ///////////////////////////////////////////////////
 */
 html > body > div > div.about_me {
-background-image: url(image-path("about_me.jpg"));
+background-image: url(image-path("about_me-small_small.jpg"));
 }
 html > body > div > div.blog {
   background-image: url(image-path("shiningLG.jpg"));
 }
 html > body > div > div.projects {
-  background-image: url(image-path("lightbulb.jpg"));
+  background-image: url(image-path("lightbulb-small_small.jpg"));
+}
+@media screen and (min-width: 600px) {
+  html > body > div > div.projects {
+  background-image: url(image-path("lightbulb-large_large.jpg"));
+}
+html > body > div > div.about_me {
+background-image: url(image-path("about_me-large_large.jpg"));
+}
 }
 .fh5co-cover {
   position: relative;
@@ -972,7 +980,7 @@ html > body > div > div.projects {
   background-color: transparent;
 /*  background-size: cover;*/
   background-attachment: fixed;
-  background-image: url("https://media.giphy.com/media/1337mjZhdNJWSY/giphy.gif");
+  background-image: url(image-path("frantic.gif"));
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-background-size: 100% 100%; 
@@ -1147,8 +1155,23 @@ html > body > div > div.projects {
     line-height: 24px;
   }
 }
-.fh5co-project-style-2 .fh5co-projects ul li a > .container {
+.containerc, .post {
+  width: 100%;
   position: relative;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+  border-style: none solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  padding: 0 1.125rem;
+}
+@media screen and (min-width: 800px) {
+  .containerc, .post {
+  width: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 .fh5co-project-style-2 .fh5co-projects ul li a:hover .fh5co-overlay {
   opacity: 0;

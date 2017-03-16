@@ -14,4 +14,10 @@ module ApplicationHelper
     page_title
   end
   end
+  def post_thumb(x)
+    @post = Post.find(x)
+    @position = @post.image.url.rindex('/') + 1
+    url = @post.image.url.insert(@position, 'sml_')
+    return url
+  end
 end

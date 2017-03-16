@@ -1,20 +1,18 @@
-<div class="container">
-<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+<% provide(:title, "Blog") %>
+<%= render 'layouts/header' %>
+<div class="containerc">
 <!-- <div class="fullpost"> -->
   <div class="post-img">
-  <%= image_tag(@post.image.url, :class => "img-responsive") %>
+  <%= image_tag( @post.image.url, :class => "img-responsive") %>
   </div>
   <div class="post-content">
-<p>
-  <strong>Title:</strong>
+<h3>
   <%= @post.title %>
-</p>
+</h3>
  
 <p>
-  <strong>Text:</strong>
   <%= @post.text %>
 </p>
 </div>
 </div>
 <!-- </div> -->
-</div>

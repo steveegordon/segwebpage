@@ -20,7 +20,7 @@
                 <% end %>
                 <div class="fh5co-category"><a href="#"><%= p.category %></a></div>  
                 <!-- <img src="images/img_same_dimension_2.jpg" alt="Image" class="img-responsive"> -->
-                <%= image_tag(p.image.url, :alt => "image", :class => "img-responsive") %>
+                <%= image_tag( post_thumb(p.id), :alt => "image", :class => "img-responsive") %>
               </div>
               <div class="fh5co-post-text">
                 <h3><%= link_to p.title, post_path(p.id) %></h3>
@@ -53,7 +53,7 @@
               </div>
               <div class="fh5co-post-text">
                 <h3><a href="#">Dreamhost and Rails</a></h3>
-                <p>For sanity's sake DON'T DO IT! It takes an incredulous amount of time and effort and still limits
+                <p class="text">For sanity's sake DON'T DO IT! It takes an incredulous amount of time and effort and still limits
                 your Rails app.</p>
               </div>
               <div class="fh5co-post-meta">
@@ -72,7 +72,7 @@
               </div>
               <div class="fh5co-post-text">
                 <h3><a href="#">Heroku and You</a></h3>
-                <p>For basic Rails apps and quick implementation this is basically the way to go. No dealing with a janky FTP just push your app like you would with Github or any other version control repository. </p>
+                <p class="text">For basic Rails apps and quick implementation this is basically the way to go. No dealing with a janky FTP just push your app like you would with Github or any other version control repository. </p>
               </div>
               <div class="fh5co-post-meta">
                 <a href="#"><i class="icon-chat"></i> 33</a>
@@ -91,7 +91,7 @@
               </div>
               <div class="fh5co-post-text">
                 <h3><a href="#">TV and Web TV</a></h3>
-                <p>It seemed inevitible but it still is crazy to me how in only about 5 years Netflix and Amazon are crushing TV in terms of programming quality.</p>
+                <p class="text">It seemed inevitible but it still is crazy to me how in only about 5 years Netflix and Amazon are crushing TV in terms of programming quality.</p>
               </div>
               <div class="fh5co-post-meta">
                 <a href="#"><i class="icon-chat"></i> 33</a>
