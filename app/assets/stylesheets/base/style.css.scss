@@ -905,8 +905,10 @@ background-image: url(image-path("about_me-large_large.jpg"));
 }
 }
 .fh5co-cover {
+
+}
+.fh5co-cover, .fh5co-overlay {
   position: relative;
-  min-height: 800px;
 /*  background-image: url("full_1.jpg")*/
 }
 .fh5co-cover .fh5co-cover-text {
@@ -915,12 +917,12 @@ background-image: url(image-path("about_me-large_large.jpg"));
 }
 .fh5co-cover .fh5co-cover-text .full-height {
   display: table;
-  min-height: 800px;
+  min-height: 100vh;
 }
 .fh5co-cover .fh5co-cover-text .full-height .fh5co-cover-intro {
   display: table-cell;
   vertical-align: middle;
-  min-height: 800px;
+  min-height: 100vh;
 }
 .fh5co-cover .fh5co-cover-text .cover-text-lead {
   font-size: 40px;
@@ -982,14 +984,14 @@ background-image: url(image-path("about_me-large_large.jpg"));
   background-attachment: fixed;
   background-image: url(image-path("frantic.gif"));
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-background-size: 100% 100%; 
-  -moz-background-size: 100% 100%; 
-  -o-background-size: 100% 100%; 
+    background-size: 100% 112%;
+  -webkit-background-size: 100% 112%; 
+  -moz-background-size: 100% 112%; 
+  -o-background-size: 100% 112%; 
   position: relative;
   width: 100%;
-  position: relative;
 }
+
 .fh5co-cover-style-2 > .fh5co-overlay {
   position: absolute;
   top: 0;
@@ -1154,6 +1156,9 @@ background-image: url(image-path("about_me-large_large.jpg"));
     font-size: 16px;
     line-height: 24px;
   }
+}
+.container {
+  height: 100%;
 }
 .containerc, .post {
   width: 100%;

@@ -13,10 +13,9 @@ $('.fh5co-cover-intro').prepend('<h1 class="cover-text-lead wow fadeInUp" data-w
   );
 }
 else if (page == "/projects"){
-$('.fh5co-cover-intro').prepend('<h1 class="cover-text-lead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Projects</h1><h2 class="cover-text-sublead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">While I attended General Assembly Los Angeles I learned a number of languages and worked on many projects in condensed time periods. Some of the projects were individual and others were team based. I worked on the front-end and back-end on all of them and here are a few:</h2><p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">'
+$('.fh5co-cover-intro').prepend('<h1 class="cover-text-lead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Projects</h1>'
   );
 }
 else {}
 });
-
 
