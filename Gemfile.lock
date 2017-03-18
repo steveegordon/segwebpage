@@ -282,7 +282,7 @@ DEPENDENCIES
   jquery-turbolinks
   mini_magick (= 3.8.0)
   net-ssh
-  pg (= 0.17.1)
+  pg
   puma (>= 2.11.1)
   rails (= 4.2.6)
   rails-assets-tether (>= 1.1.0)!
