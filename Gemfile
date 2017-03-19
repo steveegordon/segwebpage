@@ -3,11 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use sqlite3 as the database for Active Record
-# Use Sprockets for Bootstrap
-gem 'sprockets-rails', :require => 'sprockets/railtie'
 # Use bootstap for responsive design
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -22,9 +19,7 @@ gem 'carrierwave', '0.10.0'
 
 gem 'mini_magick', '3.8.0'
 
-gem 'fog', '1.32.0'
-
-gem 'net-ssh'
+gem 'fog', '1.36.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -42,6 +37,8 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -51,17 +48,15 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
+    # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
-  # gem 'sqlite3'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
 
 group :production do
   gem 'pg'
@@ -69,8 +64,5 @@ group :production do
   gem 'puma', '>= 2.11.1'
 end
 
-source 'https://rails-assets.org' do
-# tether sets positioning for popovers
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+
 
