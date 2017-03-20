@@ -10,7 +10,8 @@ class PostsController < ApplicationController
   end
   def create
     @post = Post.new(post_params)
-    @post.user_id = 1
+    # temporarily disables users.
+    # @post.user_id = 1
     if @post.save
     redirect_to '/posts'
   else
