@@ -1,5 +1,7 @@
 $(document).on('turbolinks:load', function(){
 var page = window.location.pathname;
+var loaded = $('.cover-text-lead');
+if (loaded) {$('.cover-text-lead').remove(); $('.cover-text-sublead').remove(); console.log("deleted")};
 if (page == "/"){
 $('.fh5co-cover-intro').prepend('<h1 class="cover-text-lead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Steve E. Gordon<span class="subhead"></br>Web Developer</span> </h1><h2 class="cover-text-sublead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">Welcome to my personal webpage. Here you can find out who I am, look at some of my projects, and find out what i\'m learning/reading about.</h2>'
   );
