@@ -21,6 +21,10 @@ gem 'mini_magick', '3.8.0'
 
 gem 'fog', '1.36.0'
 
+gem 'pg', '0.20'
+#fix sprockets sercurity vulnerablility
+gem 'sprockets', '~>3.7.2'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -60,7 +64,6 @@ end
 
 
 group :production do
-  gem 'pg', '~> 0.20'
   gem 'rails_12factor', '0.0.2'
   gem 'puma', '>= 2.11.1'
 end
