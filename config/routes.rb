@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'pages/projects', :path => "projects", :as => "projects"
   get 'pages/about_me', :path => "about_me", :as => "about_me"
   get 'posts' => "posts#index", :as => "blog"
+  get 'pages/project', :path => "project", :as => "project"
   get 'posts/new' => "posts#new"
   get 'posts/:id' => "posts#show", :as => 'post'
   post 'posts/new' => "posts#create", :as => "posts"
