@@ -3510,7 +3510,7 @@ a:hover .lnk-icon-right {
   height: 400px;
   position: relative;
   -webkit-perspective: 700;
-  margin: 30px auto;
+  margin: 50px auto;
   cursor: pointer;
 }
 
@@ -3619,4 +3619,16 @@ a:hover .lnk-icon-right {
   background-image: url(image_path("sonogram.jpg"));
   background-size: contain;
 /*  z-index: 1002;*/
+}
+
+@media screen and (max-width: 450px) {
+  .inleft, .inright, .cardfront {
+  width: 150px;
+  height: 150px;
+  }
+
+  .card {
+  width: 150px;
+  height: 150px;
+  }
 }
